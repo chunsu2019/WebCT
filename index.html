@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>WebCT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="instruction">
+            <h2>Setup a countdown timer to remind yourself to take a break or other important stuff while browsing the
+                web</h1>
+        </div>
+
+        <div class="alarmSettingContainer">
+            <div>
+                <input type="radio" name="type" class="urlOption">
+                <label for="html">Open a link</label>
+            </div>
+
+            <div class="url">
+                <label for="url">Url:</label>
+                <input type="text" class="urlInput">
+            </div>
+
+            <div>
+                <input type="radio" name="type" class="default">
+                <label for="html">Default sound in background</label>
+                <p>(Music by <a
+                        href="/users/lemonmusicstudio-14942887/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=15700">lemonmusicstudio</a>
+                    from <a
+                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=15700">Pixabay</a>)
+                </p>
+
+                <button class="stopPlayingButton">Stop playing</button>
+            </div>
+
+        </div>
+
+        <div class="timer">
+            <div class="hours">00</div>
+            <div class="time">:</div>
+            <div class="minutes">00</div>
+            <div class="time">:</div>
+            <div class="seconds">00</div>
+
+            <button type="button" class="start">
+                <span class="material-icons">
+                    play_circle
+                </span>
+            </button>
+
+            <button type="button" class="set">
+                <span class="material-icons">
+                    settings
+                </span>
+            </button>
+        </div>
+
+        <div class="modal">
+            <div class="modalContent">
+                <span class="close">&times</span>
+                <form action="" class="form">
+                    <div class="formContainer">
+                        <input type="number" class="hoursInput" value="00" min="0" max="99">
+                        <span>:</span>
+                        <input type="number" class="minutesInput" value="00" min="0" max="59" step="001">
+                        <span>:</span>
+                        <input type="number" class="secondsInput" value="00" min="0" max="59">
+
+                        <button type="submit" class="setTimerButton">
+                            <span class="material-icons">
+                                play_circle
+                            </span>
+                        </button>
+                    </div>
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
